@@ -1,0 +1,9 @@
+add Groq
+add python-dotenv
+add pypdf
+add python-docx
+add fastapi
+add uvicorn
+add pydantic
+uvicorn chatbot:app --reload  
+python 3.13.6

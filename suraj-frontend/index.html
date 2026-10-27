@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suraj — Personal AI Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+<div class="cursor-light" id="cursorLight" aria-hidden="true"></div>
+<div class="screen-transition" id="screenTransition" aria-hidden="true"></div>
+
+<!-- ================= HOME ================= -->
+<div id="home" class="view">
+  <nav class="home-nav">
+    <div class="brand-mini" id="navBrand">
+      <div class="mini-sun"></div>
+      <span>Suraj</span>
+    </div>
+    <div class="nav-links">
+      <a href="#projects" data-scroll="projects">Projects</a>
+      <a href="#resume" data-scroll="resume">Resume</a>
+    </div>
+  </nav>
+
+  <div class="home-scroll" id="homeScroll">
+    <section class="hero" id="home-top">
+      <div class="eyebrow">Personal AI Assistant</div>
+      <h1 class="headline" id="headline">Meet <span class="accent" id="accentWord">Suraj</span></h1>
+      <p class="subtitle" id="subtitle">Believe in yourself and keep improving yourself.</p>
+
+      <div class="sun-wrap" id="sunButton" role="button" tabindex="0" aria-label="Open chat with Suraj">
+        <div class="sun-rays">
+          <svg viewBox="0 0 100 100"><g stroke="#f6b93b" stroke-width="1.5" opacity="0.6">
+            <line x1="50" y1="2" x2="50" y2="14"/><line x1="50" y1="86" x2="50" y2="98"/>
+            <line x1="2" y1="50" x2="14" y2="50"/><line x1="86" y1="50" x2="98" y2="50"/>
+            <line x1="15" y1="15" x2="23" y2="23"/><line x1="77" y1="77" x2="85" y2="85"/>
+            <line x1="85" y1="15" x2="77" y2="23"/><line x1="23" y1="77" x2="15" y2="85"/>
+          </g></svg>
+        </div>
+        <div class="sun-glow"></div>
+        <div class="sun-core"></div>
+      </div>
+      <div class="tap-hint">Tap the sun to start a conversation</div>
+
+      <a class="scroll-cue" href="#projects" data-scroll="projects" aria-label="Scroll to projects">↓</a>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <!-- Edit the cards below: change href to your real project link, and update title/description/tags -->
+    <section class="page-section" id="projects">
+      <a class="back-pill" href="#home-top" data-scroll-top aria-label="Back to Home">← Back to Home</a>
+      <div class="section-eyebrow">Selected Work</div>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">A few things I've built. Replace these cards with links to your own work.</p>
+
+      <div class="project-grid">
+        <a class="project-card" href="https://heart-disease-predictor-7htdypyklwasdrjom38rt5.streamlit.app" target="_blank" rel="noopener">
+          <div class="p-title">Heart Disease Predictor <span class="p-arrow">↗</span></div>
+          <p class="p-desc">It is a end to end machine learning model which predict the heart disease based on given parameters.</p>
+          <div class="p-tags"><span class="tag">Pandas</span><span class="tag">Numpy</span><span class="tag">matplotlib</span><span class="tag">Support vector machine</span><span class="tag">streamlit</span></div>
+        </a>
+        <a class="project-card" href="#" target="_blank" rel="noopener">
+          <div class="p-title">Project Two <span class="p-arrow">↗</span></div>
+          <p class="p-desc">One or two lines about what this project does and the problem it solves.</p>
+          <div class="p-tags"><span class="tag">Python</span><span class="tag">ML</span></div>
+        </a>
+        <a class="project-card" href="#" target="_blank" rel="noopener">
+          <div class="p-title">Project Three <span class="p-arrow">↗</span></div>
+          <p class="p-desc">One or two lines about what this project does and the problem it solves.</p>
+          <div class="p-tags"><span class="tag">Java</span><span class="tag">Android</span></div>
+        </a>
+        <a class="project-card" href="#" target="_blank" rel="noopener">
+          <div class="p-title">Project Four <span class="p-arrow">↗</span></div>
+          <p class="p-desc">One or two lines about what this project does and the problem it solves.</p>
+          <div class="p-tags"><span class="tag">SQL</span><span class="tag">API</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ RESUME ============ -->
+    <!-- Replace resume.pdf / resume.docx with the actual path/filename of your uploaded resume -->
+    <section class="page-section" id="resume">
+      <a class="back-pill" href="#home-top" data-scroll-top aria-label="Back to Home">← Back to Home</a>
+      <div class="section-eyebrow">About Me</div>
+      <h2 class="section-title">Resume</h2>
+      <p class="section-sub">Download my resume in whichever format you need.</p>
+
+      <div class="resume-card">
+        <div class="resume-left">
+          <div class="resume-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6 2h9l5 5v15H6V2z" stroke="currentColor" stroke-width="1.6"/><path d="M9 13h6M9 17h6M9 9h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h3>My Resume</h3>
+            <p>Updated regularly — PDF or Word, your choice</p>
+          </div>
+        </div>
+        <div class="resume-actions">
+          <a class="resume-btn primary" href="assets/resume/resume.pdf" download>⬇ Download PDF</a>
+          <a class="resume-btn" href="http://127.0.0.1:8000/download-resume" download>⬇ Download DOCX</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="home-footer">Built for you, always on — Suraj</footer>
+  </div>
+</div>
+
+<div class="flash" id="flash"></div>
+
+<!-- ================= CHAT ================= -->
+<div id="chat" class="view hidden">
+  <div class="sidebar-scrim" id="scrim"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand" id="backHome">
+      <div class="mini-sun"></div>
+      <span>Suraj</span>
+    </div>
+    <button class="new-chat" id="newChatBtn">＋ New chat</button>
+    <div class="section-label">History</div>
+    <div class="history-list" id="historyList">
+      <div class="history-item">Planning my Goa trip</div>
+      <div class="history-item">Resume feedback</div>
+      <div class="history-item">Daily study plan</div>
+      <div class="history-item">Diwali gift ideas</div>
+    </div>
+    <div class="sidebar-footer">
+      <div class="avatar-dot">YOU</div>
+      <span>Your account</span>
+    </div>
+  </aside>
+
+  <main class="chat-main">
+    <header class="chat-header">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <button class="back-btn" id="chatBackBtn">← Back</button>   <!--i change this -->
+        <div class="title">☉ Suraj</div>
+      </div>
+      <div class="status"><span class="dot"></span>Online</div>
+    </header>
+
+    <div class="chat-body">
+      <!-- 1. Ask-a-question section: centered composer, shown before the first message -->
+      <div class="intro" id="intro">
+        <h2 class="intro-title">Ask Anything you want to know about me?</h2>
+        <p class="intro-sub">Ask anything — Suraj is listening.</p>
+        <!-- composer lives here first, then gets moved to the bottom slot once chat starts -->
+        <div class="composer" id="composer">
+          <div class="composer-inner">
+            <textarea id="input" rows="1" placeholder="Message Suraj..."></textarea>
+            <button class="send-btn" id="sendBtn" aria-label="Send">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L20 4L13 20L11 13L4 12Z" fill="currentColor"/></svg>
+            </button>
+          </div>
+          <div class="composer-note">Focus on your actions, not on the results.</div>
+        </div>
+      </div>
+
+      <!-- 2. Answer section: question + answer thread, with a loading icon while "thinking" -->
+      <div class="messages" id="messages"></div>
+    </div>
+
+    <div id="composerSlot"></div>
+  </main>
+</div>
+
+<script src="js/stars.js"></script>
+<script src="js/cursor-effects.js"></script>
+<script src="js/screen-transition.js"></script>
+<script src="js/magnetic-text.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+# Secrets & Environment Variables (CRITICAL)
+.env
+.env.*
+!.env.example
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Microsoft Word temporary lock files (keeps your actual .docx safe)
+~$*.docx
+~$*
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
