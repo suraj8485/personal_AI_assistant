@@ -147,7 +147,7 @@ async function handleSend(){
   const thinkingEl = showThinking();
 
   try {
-    const response = await fetch('https://personal-ai-assistant-dhlp.onrender.com', {
+    const response = await fetch('https://personal-ai-assistant-dhlp.onrender.com/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
