@@ -152,9 +152,15 @@ def home():
 from fastapi.middleware.cors import CORSMiddleware
 
 # Allow your frontend to talk to the backend
+origins = [
+    "https://personalaiassistant-suraj-frontend.vercel.app",  # Your Vercel frontend URL
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "http://127.0.0.1:5500",
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # for development. Later change to your frontend URL
+    allow_origins=origins,  # for development. Later change to your frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
