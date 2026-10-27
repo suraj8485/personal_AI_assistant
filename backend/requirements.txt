@@ -1,8 +1,7 @@
-Groq
-python-dotenv
-pypdf
-python-docx
 fastapi
 uvicorn
+groq
+python-dotenv
+python-docx
+pypdf
 pydantic
-python 3.13.6
